@@ -34,7 +34,7 @@ body {
     height: 17rem;
   }
   main header h1 {
-    font-family: "Montserrat", serif;
+    font-family: "PT Serif", serif;
     font-size: 2.25rem;
     margin-bottom: 2.35rem;
   }
@@ -64,10 +64,19 @@ body {
   }
   main header div p {
     font-size: 1.12rem;
+    line-height: 1.6rem;
+  }
+}
+@media (min-width: 1000px) {
+  main header {
+    padding-left: 15rem;
+  }
+  main header div p {
+    width: 25rem;
   }
 }
 
-/* * HEADER MAIN CONTENT */
+/* * CONTENT STYLE */
 @media (min-width: 300px) {
   section {
     margin-bottom: 5rem;
@@ -172,8 +181,48 @@ body {
     top: 6.5rem;
   }
 }
+@media (min-width: 1100px) {
+  main section {
+    margin-bottom: 15rem;
+    padding: 2.5rem 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10rem;
+    column-gap: 0;
+  }
+  main section article:nth-child(1),
+  main section article:nth-child(3),
+  main section article:nth-child(4),
+  main section article:nth-child(6) {
+    padding-top: 0;
+  }
+  main section article:nth-child(2),
+  main section article:nth-child(5) {
+    padding-top: 8rem;
+  }
+  main section article {
+    width: 16.5rem;
+    height: 24rem;
+    margin: 0 auto;
 
-/* * HEADER FOOTER CONTENT */
+    position: relative;
+  }
+  main section article img {
+    width: 15rem;
+  }
+  main section article:nth-child(1) span,
+  main section article:nth-child(3) span,
+  main section article:nth-child(4) span,
+  main section article:nth-child(6) span {
+    top: 3rem;
+  }
+  main section article:nth-child(2) span,
+  main section article:nth-child(5) span {
+    top: 11rem;
+  }
+}
+
+/* * FOOTER STYLE */
 @media (min-width: 300px) {
   footer {
     font-family: "Montserrat", sans-serif;
